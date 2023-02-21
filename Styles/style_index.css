@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: #e6e6e6;
+}
+
+/* Navbar */
+
+.barra{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.laliga,
+.laliga img
+{
+    padding-right: 220px;
+    height: 60px;
+    margin-top: -4px;
+    margin-bottom: -12px;
+}
+
+/* Fin Navbar */
+
+/* Escudos equipos */
+.contNav{
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    justify-content: space-around;
+}
+.imgL{
+    width: 45px;
+    height: 45px;
+}
+
+
+/* Fin escudos equipos */
+
+/* Inicio sppiner  */
+
+:root {
+    --offset: 187;
+    --duration: 1.6s;
+  }
+
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+
+
+  .spinner {
+    animation: rotator var(--duration) linear infinite;
+  }
+  
+  @keyframes rotator {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+  
+  .path {
+    stroke-dasharray: var(--offset);
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: dash var(--duration) ease-in-out infinite, colors calc(var(--duration) * 4) ease-in-out infinite;
+  }
+  
+  @keyframes colors {
+    0% {
+      stroke: #c008795d;
+    }
+    25% {
+      stroke: #DE3E35;
+    }
+    50% {
+      stroke: #F7C223;
+    }
+    75% {
+      stroke: #1B9A59;
+    }
+    100% {
+      stroke: #4285F4;
+    }
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: var(--offset);
+    }
+    50% {
+      stroke-dashoffset: calc(var(--offset) / 4);
+      transform: rotate(135deg);
+    }
+    100% {
+      stroke-dashoffset: var(--offset);
+      transform: rotate(450deg);
+    }
+  }
+
+/* Fin spinner */
+
+
+
+
+.carrusel{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding-top: 60px;
+} */
+
+/* .boton{
+    opacity: 50%;
+    width: 100%;
+    
+} */
+
+/* button{
+    outline: none;
+    width: 100%;
+}
+
+/* Inicio highlights */
+.high{
+    display: flex;
+    padding-top: 60px;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+justify-content: center;
+padding-top: 30px;
+justify-content: space-around;
+
+}
+
+.card-img-top{
+    height: 200px;
+    width: 287px;
+}
+
+/* Fin highlights */
+
+/* News letter */
+
+.container{
+    padding-top: 40px;
+}
+
+.input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* Fin News letter */
+
+/* Inicio footer */
+
+footer {
+    margin-top: 50px;
+}
+
+.img{
+    display: flex;
+    width: 90x;
+    height: 90px;
+    align-self: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+
+}
+
+.footer1{
+display: flex;
+flex-direction: row;
+}
+
+.footer2{
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    padding-top: 38px;
+    font-size: 20px;
+    padding-left: 430px;
+}
+
+/* Fin footer */
+
+/* .brand img{
+    width: 50px;
+    height: 50px;
+} */
+
+

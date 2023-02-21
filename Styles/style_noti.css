@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: #e6e6e6;
+}
+
+.laliga,
+.laliga img
+{
+    padding-right: 220px;
+    height: 60px;
+    margin-top: -4px;
+    margin-bottom: -12px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 60px;
+}
+
+
+.col-sm-10{
+padding-top: 15px;
+}
+
+
+.principal img{
+    height: 410px;
+    width: 740px;
+}
+
+.noticia1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.titulo{
+    text-align:  center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+.img{
+    display: flex;
+    width: 90x;
+    height: 90px;
+    align-self: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+}
+
+.footer1{
+display: flex;
+flex-direction: row;
+}
+
+.footer2{
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    padding-top: 38px;
+    font-size: 20px;
+    padding-left: 430px;
+}

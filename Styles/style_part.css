@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+.laliga,
+.logobarra {
+    padding-right: 220px;
+    height: 60px;
+    margin-top: -35px;
+    margin-bottom: -12px;
+}
+
+.imagen {
+    width: 30px;
+    height: 30px;
+}
+
+.laliga,
+.laliga img .titpartidos {
+    text-align: center;
+    padding-top: 40px;
+}
+
+h2 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* Botones ligas */
+.botLigas{
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  margin: auto;
+}
+
+/* Fin botones ligas */
+
+/* Escudos equipos */
+.contNav{
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  justify-content: space-around;
+}
+.imgL{
+  width: 45px;
+  height: 45px;
+}
+
+
+/* Fin escudos equipos */
+
+
+.tabla {
+    width: 800px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+/* Inicio sppiner  */
+
+:root {
+    --offset: 187;
+    --duration: 1.6s;
+  }
+
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+
+
+  .spinner {
+    animation: rotator var(--duration) linear infinite;
+  }
+  
+  @keyframes rotator {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+  
+  .path {
+    stroke-dasharray: var(--offset);
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: dash var(--duration) ease-in-out infinite, colors calc(var(--duration) * 4) ease-in-out infinite;
+  }
+  
+  @keyframes colors {
+    0% {
+      stroke: #c008795d;
+    }
+    25% {
+      stroke: #DE3E35;
+    }
+    50% {
+      stroke: #F7C223;
+    }
+    75% {
+      stroke: #1B9A59;
+    }
+    100% {
+      stroke: #4285F4;
+    }
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: var(--offset);
+    }
+    50% {
+      stroke-dashoffset: calc(var(--offset) / 4);
+      transform: rotate(135deg);
+    }
+    100% {
+      stroke-dashoffset: var(--offset);
+      transform: rotate(450deg);
+    }
+  }
+
+/* Fin spinner */
+
+
+/* Inicio footer */
+.img {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    align-self: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer2 {
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    padding-top: 38px;
+    font-size: 20px;
+    padding-left: 500px;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Fin footer */
